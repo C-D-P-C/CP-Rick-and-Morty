@@ -1,0 +1,47 @@
+.pagination {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  margin: 25px 0;
+}
+
+.pagination div {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.pagination button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #71a821;
+  color: white;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pagination button:hover {
+  background-color: #5c8010;
+}
+
+.pagination button:active {
+  background-color: #417408;
+}
+
+/* Estilos para los puntos de las páginas */
+.page-dot {
+  font-size: 2em; /* Ajusta el tamaño de los puntos */
+  line-height: 0.4; /* Ajusta la altura de línea para alinear los puntos con el texto */
+}
+
+/* Efecto de luz verde para la página actual */
+.current-page {
+  color: lime; /* Cambia el color del punto a verde neón */
+}
+/* Estilos para el span que muestra la página actual y el total de páginas */
+.pagination span {
+  font-size: 2em; /* Ajusta el tamaño de los números */
+}

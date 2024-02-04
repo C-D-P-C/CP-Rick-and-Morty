@@ -1,0 +1,77 @@
+.resident {
+  background-color: #072226;
+  width: 250px;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer; /* Cambia el cursor a una "manita" al pasar el cursor */
+}
+
+.resident:hover {
+  transform: scale(1.1);
+  box-shadow: -4px -4px 8px 0 rgb(0, 0, 0), -6px -6px 20px 0 rgb(0, 0, 0); /* La sombra aparece solo al pasar el cursor */
+}
+
+.resident__photo {
+  position: relative;
+}
+
+.resident__status {
+  background-color: #072226;
+  position: absolute;
+  top: 10%;
+  padding: 5px 10px;
+  border-radius: 0 5px 5px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.resident__circle {
+  background-color: grey;
+  width: 15px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+}
+
+.Dead {
+  background-color: red;
+}
+
+.Alive {
+  background-color: #04a105;
+}
+
+.resident__name {
+  text-align: center;
+  margin: 15px 0;
+}
+
+.resident hr {
+  border: 1px solid gray;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.resident__list {
+  padding: 15px;
+}
+
+.resident__item {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+}
+
+.resident__item span:first-child {
+  padding-left: 20px;
+  color: gray;
+}
+.app__container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+  margin-top: 20px;
+}
